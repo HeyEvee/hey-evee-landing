@@ -948,26 +948,17 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none}
     <button class="modal-close" onclick="closeModal()">×</button>
     <div class="modal-drag"></div>
     <h2 class="modal-title" id="mTitle">Join Evie</h2>
-    <p class="modal-sub" id="mSub">Join today — cancel anytime, no contracts</p>
+    <p class="modal-sub" id="mSub">Enter your details and we will take you to secure checkout.</p>
     <div class="modal-summary">
       <div><div class="modal-plan-name" id="mPlan">EVIE Access</div><div class="modal-plan-desc" id="mDesc">Monthly membership</div></div>
       <div class="modal-price" id="mPrice">$27</div>
     </div>
-    <div class="pay-tabs">
-      <button class="pay-tab on" onclick="selTab(this)">Card</button>
-      <button class="pay-tab" onclick="selTab(this)">Apple Pay</button>
-      <button class="pay-tab" onclick="selTab(this)">PayPal</button>
-    </div>
+
     <label class="f-label">Your Name</label>
     <input class="f-input" placeholder="First name" id="fName"/>
     <label class="f-label">Email Address</label>
     <input class="f-input" type="email" placeholder="you@email.com" id="fEmail"/>
-    <label class="f-label">Card Number</label>
-    <input class="f-input" placeholder="1234 5678 9012 3456" maxlength="19" oninput="fmtCard(this)"/>
-    <div class="f-row">
-      <div><label class="f-label">Expiry</label><input class="f-input" placeholder="MM / YY" maxlength="7" oninput="fmtExp(this)"/></div>
-      <div><label class="f-label">CVC</label><input class="f-input" placeholder="123" maxlength="3"/></div>
-    </div>
+
     <button class="modal-submit" id="mSubmit" onclick="pay()">Join Evie — <span id="mBtnPrice">$27/month</span></button>
     <p class="modal-secure">Secured by Stripe · 256-bit SSL · Cancel anytime</p>
     <div class="upsell-in-modal" id="uimBox">
